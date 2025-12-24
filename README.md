@@ -1,34 +1,13 @@
-# Python Distilled - Learning Journal
+# Python Distilled - Learning Repository
 
-A structured documentation of my journey through *Python Distilled* by David Beazley. This repository serves as a comprehensive record of concepts, code examples, and insights gained while mastering Python fundamentals and advanced topics.
+Code examples and practice while working through *Python Distilled* by David Beazley.
 
 ## Objectives
 
 - Build a deep understanding of Python's core principles
-- Document key concepts and practical applications
-- Track progress through consistent daily practice
+- Practice concepts through hands-on coding
 - Create a reference resource for future projects
-
-## Structure
-```
-daily-notes/
-├── day-01.md
-├── day-02.md
-└── ...
-```
-
-Each entry includes:
-- Topics covered
-- Key takeaways
-- Code examples
-- Personal notes and questions
-
-## Progress Tracker
-
-| Day | Date | Topics | Status |
-|-----|------|--------|--------|
-| 1   | -    | -      | 🔄 In Progress |
 
 ---
 
-*Learning in public to grow as a developer.*
+*Learning by doing*
