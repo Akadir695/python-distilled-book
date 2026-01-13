@@ -26,3 +26,8 @@ my_dict = {
 # print(my_items.items())
 for key, value in my_dict.items():
  print(key, "=", value)
+# printing all of lines in a file
+with open("myinfo.txt") as file:
+  for line in file:
+    print(line, end='')
+    

@@ -16,4 +16,3 @@ while year < num_years:
   principal = principal * (1 + rate)
   print(f"{year:>3d} {principal:0.2f}" )
   year += 1
-  
