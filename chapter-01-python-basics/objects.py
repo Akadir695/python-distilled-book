@@ -48,7 +48,7 @@ account._balance += 50  # Balance updated but transaction_count is NOT!
 print(account._balance)           # 150 (correct)
 print(account._transaction_count) # 1 (WRONG! Should be 2)
 
-# Inheritance is way we can add or redefince the capabilities of existing classes
+# *Inheritance is way we can add or redefince the capabilities of existing classes
 # Example 
 class Employee:
   def __init__(self, name, salary):
