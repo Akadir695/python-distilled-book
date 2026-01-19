@@ -76,6 +76,6 @@ class Manager(Employee):
         return f"{self.name} is holding a meeting"
   
 manager = Manager("Alice", 90000, 5)
-print(manager.work())
+print(manager.work()) 
 print(manager.hold_meeting()) 
 print(manager.get_salary())    
