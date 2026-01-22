@@ -4,14 +4,14 @@ anoher data collecion"""
 # Transform: square each number
 """A list comprehension is a concise way to create a new list by transforming and/or filtering elements from an existing collection (like a list, tuple, set, or range)."""
 numbers = [1, 2, 3, 4, 5]
-# squares = []
+squares = []
 # Traditional loop approach:
-# for x in numbers:
-#   squers.append(x**2)
-# print(squers)
+for x in numbers:
+  squares.append(x**2)
+print(squares)
 # More concise way 
-# squares = [x**2 for x in numbers]
-# print(squares)
+squares = [x**2 for x in numbers]
+print(squares)
 # we can apply filters to the operation
 squares = [x**2 for x in numbers if x > 1]
 # squares = [x**2 for x in numbers]
