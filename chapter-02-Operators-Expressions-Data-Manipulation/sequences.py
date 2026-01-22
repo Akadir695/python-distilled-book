@@ -28,5 +28,8 @@ myNumber[::-2]
 myNumber[::2]
 myNumber[0:5:2]
 myNumber[0:5:-2]
+# Operations on mutable sequences
+#  strings and tuples are immutable, and can not be modified after creation
+
 
 
