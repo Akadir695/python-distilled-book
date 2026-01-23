@@ -16,4 +16,3 @@ print(squares)
 squares = [x**2 for x in numbers if x > 1]
 # squares = [x**2 for x in numbers]
 print(squares)
-# 
