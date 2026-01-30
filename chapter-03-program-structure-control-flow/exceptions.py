@@ -39,3 +39,10 @@ else:
     print(content)
 finally:
   file.close()
+  
+# defining new exceptions
+# these are defined in terms of classess
+class NetworkError(Exception):
+  pass 
+# we can use our new exception  with raise statement 
+raise NetworkError("Cannot find host")
