@@ -44,6 +44,3 @@ print(a)
 print(b)
 del a
 del b
- #   Box A  ←─────→  Box B
-# - Box A exists because Box B is pointing to it
-# - Box B exists because Box A is pointing to it
