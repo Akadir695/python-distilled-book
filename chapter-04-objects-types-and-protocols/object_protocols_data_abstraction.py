@@ -11,12 +11,23 @@ print(fraction_result) # 50
 from decimal import Decimal
 decimal_result = compute_cost(Decimal("1.25"), Decimal("50"))
 print(decimal_result) # 62.50
-#  the function might workd inunexpected ways
-unexpected_result = compute_cost("alot", 50)
-print(unexpected_result) 
-# python does not verify correct program behavior in advance 
-# This behavior is determined by dynamic process that involves the dispatch of so-called "special" or Magic methods
-# the behavior of any given object depends entirely on the set of special methods that it implements
-# Object Behavior = The Magic Methods It Implements
-# The car's capabilities = what it physically has
-# The object's behavior = what magic methods it implements
+# #  the function might workd inunexpected ways
+# unexpected_result = compute_cost("alot", 50)
+# print(unexpected_result) 
+"""python does not verify correct program behavior in advance 
+This behavior is determined by dynamic process that involves the dispatch of so-called "special" or Magic methods
+the behavior of any given object depends entirely on the set of special methods that it implements
+Object Behavior = The Magic Methods It Implements
+The car's capabilities = what it physically has
+The object's behavior = what magic methods it implements"""
+# Comparison protocols(object can be compared in various ways the most basic check is identity check
+# )
+a = [1,2,3, 4, 5] 
+b  =  a
+b.append(6)
+
+print(b is a)
+print(a == b)
+"""note that identity does not consider the values stored inside of an object 
+even if they happen to be same 
+"""
