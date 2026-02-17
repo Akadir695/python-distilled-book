@@ -5,13 +5,15 @@ def add(x, y): # the body of function is sequence of statements that execute whe
 
 a = add(4, 2)
 print(a)
-# Arguments are valued to left-to-right before executing the functions
-# this is called application evalutiion order:
-# the order and number of arguments must match the parameters given in the function
-# b = add(4, 2, 4)
-# print(b) # TypeError: add() takes 2 positional arguments but 3 were given
-# Default Arguments(we can attach default values to function parameter assigning values in func definations)
 
+"""Arguments are valued to left-to-right before executing the functions
+this is called application evalutiion order:
+the order and number of arguments must match the parameters given in the function
+ b = add(4, 2, 4)
+print(b) # TypeError: add() takes 2 positional arguments but 3 were given
+ Default Arguments(we can attach default values to function parameter assigning values in func definations)
+"""
+ 
 # WITH default arguments
 def add_with_defaults(x, y=0):
     return x + y
@@ -62,3 +64,33 @@ def build_profile(first, last, **user_info):
     print(f"Additional Data: {user_info}")
 
 build_profile('Aris', 'Thorne', location='London', field='AI')
+# Functions that acceptdef accepts()
+def accept_all(*args, **kwargs):
+    print("Positional args:", args)
+    print("Keyword args:   ", kwargs)
+accept_all(1, 2, 3, name="Alice", age=25)
+
+# the name of function should be lowercase with an underscore(_) used as word seperator
+# the name of function can obtained via __name__ attribute
+def square(x, y):
+  return x* y
+squared_number = square(4, 4)
+print(squared_number)
+# Functions Applications and parameter passing (care is required if mutable objects are passed)
+def square_items(items):
+    for i, x in enumerate(items):
+        items[i] = x * x
+numbers = [1, 2, 3, 4, 5]
+square_items(numbers)
+
+print(numbers)  # Output: [1, 4, 9, 16, 25]
+"""in this case if the function mutate their input values or the change the state of other parts program 
+are said to have side effects, as general rule the side effects must be avoided
+"""
+# modifying an object and resasigning a variable name 
+def sum_squares(items):
+  items = [x*x for x in items]
+  return sum(items)
+a = [1, 2, 3, 4, 5]
+result = sum_squares(a)
+print(result)
