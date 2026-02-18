@@ -1,8 +1,9 @@
-# This Chapter describes function definations,application, scoping protocols, closure, decorators
-# functions definations(we use def statements)
-def add(x, y): # the body of function is sequence of statements that execute when the func is called or executed
+""" This Chapter describes function definations,application, scoping protocols, closure, decorators
+ functions definations(we use def statements)
+the body of function is sequence of statements that execute when the func is called or executed
+"""
+def add(x, y): 
   return x+ y
-
 a = add(4, 2)
 print(a)
 
@@ -49,10 +50,10 @@ print(our_revenue)
 """Functions arguments can be supplied by explicity naming each parameter and specifying value
 where you explicitly name the parameters when calling a function.
 """
-def sum(x=3, y=22, w="hello", z=[1, ]):
+def sum_value(x=3, y=22, w="hello", z=[1, ]):
     print(f"x={x}, y={y}, w={w}, z={z}")
     return x + y
-sum()
+sum_value()
 # Vardiac keyword arguments(if the last arguments is prefixed with **
 """all additional arguments(those that don't match any of the other other parameter name)
 are placed in dictionary and passed to the function
@@ -94,3 +95,35 @@ def sum_squares(items):
 a = [1, 2, 3, 4, 5]
 result = sum_squares(a)
 print(result)
+# Return values (Return return value from the function if no value the None is return )
+
+#  Returning a single value
+def add(a, b):
+    return a + b
+result = add(3, 5)
+print(result)  
+# Returning multiple values (as a tuple)
+def get_user():
+  name = "Alice"
+  age = 25
+  return name, age 
+
+name, age = get_user()
+print(name, age)
+# Early return (exit function before the end)
+def check_age(age):
+  if age < 0:
+    return "Invalid age"
+  return f"age is {age}"
+# Error Handling 
+# What course of action should be taken if input value is malformed 
+def check_age(age):
+  if age > 0:
+    return f"age is {age}"
+  else:
+    raise ValueError("bad value")
+for value in [5, 0, -2]:
+    try:
+        print(check_age(value))
+    except ValueError as e:
+        print(f"Error for {value}: {e}")
