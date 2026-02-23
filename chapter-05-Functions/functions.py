@@ -6,7 +6,6 @@ def add(x, y):
   return x+ y
 a = add(4, 2)
 print(a)
-
 """Arguments are valued to left-to-right before executing the functions
 this is called application evalutiion order:
 the order and number of arguments must match the parameters given in the function
