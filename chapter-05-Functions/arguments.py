@@ -28,7 +28,7 @@ f(3)
 f(5)
 # Partial function closely relates to a concept called currying 
 """Currying is functional programming technique where multiple-arguments function is expressed 
- as chain of nested single argument functions
+as chain of nested single argument functions
 """
 # three-arguments functions 
 def f(x, y, z):
@@ -51,3 +51,19 @@ def after(sec, func, *args):
   func(*args)
   
 after(2, add, 10, 10)
+# Returning Results from callbacks (Returning the results of calculation)
+def after(sec, func, *args):
+  time.sleep(sec)
+  return func(*args)
+after("1", add, 2, 2) # TypeError: 'str' object cannot be interpreted as an integer
+after(1, add, "1", 2)
+# if it is important to distinguisgh between two cases
+class CallbackError(Exception):
+  pass
+def after(sec, func, *args):
+  time.sleep(sec)
+  try:
+      return func(*args)
+  except Exception as err:
+    raise CallbackError("callback function failed") from err
+  
