@@ -48,14 +48,14 @@ added = add(5, 4)
 print(added())
 print(added.__closure__)
 print(added.__closure__[0].cell_contents)
-print(added.__closure__[1].cell_contents)
-# Environment inspection
+# print(added.__closure__[1].cell_contents)
+# # Environment inspection
 # funcs can inspect their execution environment using the built-in function globals() and locals()
 x = 10  # global variable
-# def add(a, b):
-#     c = a + b  # local variable
-#     print(locals())   # {'a': 5, 'b': 4, 'c': 9}
-#     print(globals())  # {'x': 10, 'add': <function>, ...}
-#     return c
+def add(a, b):
+    c = a + b  # local variable
+    print(locals())   # {'a': 5, 'b': 4, 'c': 9}
+    print(globals())  # {'x': 10, 'add': <function>, ...}
+    return c
 
-# add(5, 4)
+add(5, 4)
