@@ -35,3 +35,24 @@ print(a.__repr__())
 print(b.__repr__())
 # each intance has it is own state we can view it using vars()
 print(vars(a))
+# attributes access setting, getting and deleting 
+# get 
+print(a.owner)
+# set 
+a.balance = 750.0
+# del
+print(a.balance)
+a.balance = 800.0
+# everything is dynamic process with few restrictions we can add new attribute to an object after it has been created
+a.create_date = '11/03/2026'
+a.nickame = 'former BDFL'
+print(a.create_date) 
+# We can use getattri,  setattri,  delattr functions instead of using dot operator
+print(getattr(a, 'owner'))
+#  setattri
+setattr(a, "balance", 1000.0)
+print(getattr(a, 'balance'))
+delattr(a, "balance")
+# we can use hasattr() to test the existence of an attribute It only returns True or False 
+print(hasattr(a, "balance")) # False
+# bound method is when we  access attribute through an object
