@@ -1,5 +1,5 @@
 # Scoping rules 
-class Account:
+class AccountScoping:
   def __init__(self, owner, balance):
    self.owner = owner
    self.balance = balance
@@ -18,3 +18,4 @@ class Account:
   
 # Python lacks a class-level scope 
 # This means methods cannot see class-level variables directly — unlike Java/C++.
+# Operator overloading and protocols
