@@ -89,3 +89,4 @@ u = udict(name = 'farah', age = 20)
 print(u)
 u.update(color = 'red')
 print(u)
+# class variable and methods
