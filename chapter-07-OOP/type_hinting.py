@@ -24,3 +24,6 @@ print(a.owner)
 b = Account("faizo", "alott")
 b.balance = "i am rich"
 print(b.balance)
+# one possible solution is we should not do that or we can owner: str   balance:   balance: float to give the users information
+print(type(Account))
+
