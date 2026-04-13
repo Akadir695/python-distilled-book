@@ -30,4 +30,26 @@ print(formatted)
 formatted = format(x, '10.4f')
 print(formatted)
 formatted = format(x, '*<10.4f')  # left-align, fill with *
-print(formatted)
+# print(formatted)
+# the second argument of formatting is format speciafier
+name = 'elwood'
+
+print(format(name, "<10"))   
+print(format(name, ">10"))  
+print(format(name, "^10"))   
+print(format(name, "*^10"))
+
+y = 5045
+
+print(format(y, "10d"))   
+print(format(y, "10x"))
+print(format(y, "10b"))  
+print(format(y, "010b")) 
+
+# Zero-padding makes more sense with a wider field:
+print(format(y, "016b"))  
+# for more string format  format we can use f-strings
+n = 123.456
+print(f'value is {n:0.2f}')
+n = 123.456
+print(f'value is {n:0.4f}')
