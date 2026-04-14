@@ -6,4 +6,4 @@ print(user)
 editor = os.environ.get("EDITOR", "nano")    
 print(editor)
 val    = os.environ.get("SOMEVAR", "default")
-os.environ["NAME"] = "VALUE"  
+os.environ["NAME"] = "VALUE"
